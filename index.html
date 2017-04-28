@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Gopinath Balu</title>
+	<meta name="author" content="Gopinath Balu" />
+	<meta name="description" content="portfolio of GopinathBalu - aspiring data scientist" />
+	<meta name="keywords"  content="data-scientist,data-science,machine-learning,fresher,jobs,chennai,masters,python" />
+	<meta name="Resource-type" content="Document" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section1,
+	#section2,
+	#section3,
+	#section4,
+	#section5,
+	#section6{
+		background-size: cover;
+		background-attachment: fixed;
+		text-align:center;
+	}
+
+	/* Defining each sectino background and styles
+	* --------------------------------------- */
+	#section1{
+		background-image: url(imgs/bg1.jpg);
+	}
+	#section1 h1{
+		top: 50%;
+		transform: translateY(-50%);
+		position: relative;
+	}
+	#section2{
+		background-image: url(imgs/bg3.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3{
+		background-image: url(imgs/bg4.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section4{
+		background-image: url(imgs/bg6.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section6{
+		background-image: url(imgs/bg7.jpg);
+		padding: 6% 0 0 0;
+	}
+	
+	#section3 h1{
+		color: #000;
+	}
+
+	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background-image: url(imgs/bg2.jpg);
+		padding: 6% 0 0 0;
+	}
+	#slide2{
+		background-image: url(imgs/bg5.jpg);
+		padding: 6% 0 0 0;
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+
+	canvas {
+	    /*display:block;
+	    background: #ffffff;
+	    z-index: 5;
+	    height: 100%;
+	    width: 100vh;*/
+	    display: block;
+		vertical-align: bottom;
+	}
+
+	#particles-js {
+	  	position:fixed;
+	  	top:0;
+	  	right:0;
+	  	bottom:0;
+	  	left:0;
+	  	z-index:0; 
+	}
+
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> -->
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/particles.js"></script>
+	<script type="text/javascript" src="js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionSelector: '.vertical-scrolling',
+    			slideSelector: '.horizontal-scrolling',
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['Home', 'Bio', 'Edu', 'Know', 'Portfolio', 'Contact'],
+				anchors: ['Intro', 'Bio', 'Education', 'Technology', 'Portfolio', 'Contact'],
+				verticalCentered: false,
+				loopTop: true,
+				loopBottom: true,
+				//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo fullPage.js/issues/208
+				css3:false
+				
+			});
+		});
+	</script>
+
+</head>
+<body>
+<div id="fullpage">
+	<section class="vertical-scrolling"><div id="particles-js"/></section>
+	<section class="vertical-scrolling" id="section2"><h1>Bio</h1></section>
+	<section class="vertical-scrolling" id="section3"><h1>Education</h1></section>
+	<section class="vertical-scrolling" id="section4"><h1>Technology</h1></section>
+	<section class="vertical-scrolling" id="section5">
+		<section class="horizontal-scrolling" id="slide1"><h1>Portfolio</h1></section>
+		<section class="horizontal-scrolling" id="slide2"><h1>Totally customizable</h1></section>
+	</section>
+	<section class="vertical-scrolling" id="section6"><h1>Contact</h1></section>
+</div>
+<script>
+        particlesJS("particles-js", {"particles":{"number":{"value":90,"density":{"enable":true,"value_area":800}},"color":{"value":"#0722f0"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":7},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ff0000","opacity":0.4,"width":1},"move":{"enable":true,"speed":1.5,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":140,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+</script>
+</body>
+</html>
