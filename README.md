@@ -1,1 +1,0 @@
-# gopi_portfolio
