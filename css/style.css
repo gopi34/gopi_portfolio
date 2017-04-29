@@ -29,106 +29,122 @@ body {
   font:normal 75% Arial, Helvetica, sans-serif;
 }
 
+/* code for hero section */
 canvas {
-  display: block;
-  vertical-align: bottom;
-}
-
-/* ---- typed.js container ---- */
-
-#typed_div {
-  position: ;
-  width: 50%;
-  height: 20%;
-}
-/* ---- particles.js container ---- */
+    /*display:block;
+    background: #ffffff;
+    z-index: 5;
+    height: 100%;
+    width: 100vh;*/
+    display: block;
+    vertical-align: bottom;
+  }
 
 #particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #16192a;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+      position:fixed;
+      top:0;
+      right:0;
+      bottom:0;
+      left:0;
+      z-index:0; 
+  }
+
+.typed_wrap {
+    background:url('../imgs/header-bg.png');
+    height: 40px;
+    width: 100%;
+    display: block;
+    padding: 10px 0 0 10px;
+    position: absolute;
+}
+.typed_wrap h1 {
+    display: inline;
+    color: #fff;
+    font-size: 2em;
+}
+.typed::after {
+    animation: 0.7s ease 0s normal none infinite running blink;
+    content: "|";
+    display: inline;
+}
+.typed-cursor {
+    display: none;
+    opacity: 0;
+}
+@keyframes blink {
+0% {
+    opacity: 1;
+}
+50% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+@keyframes blink {
+0% {
+    opacity: 1;
+}
+50% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+@keyframes blink {
+0% {
+    opacity: 1;
+}
+50% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
 }
 
-/* ---- stats.js ---- */
-
-.count-particles{
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-.js-count-particles{
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles{
-  -webkit-user-select: none;
-}
-
-#stats{
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles{
-  border-radius: 0 0 3px 3px;
-}
-
-/* ---- typed.js---- */
 /* code for animated blinking cursor */
-        .typed-cursor{
-            opacity: 1;
-            font-weight: 100;
-            -webkit-animation: blink 0.7s infinite;
-            -moz-animation: blink 0.7s infinite;
-            -ms-animation: blink 0.7s infinite;
-            -o-animation: blink 0.7s infinite;
-            animation: blink 0.7s infinite;
-        }
-        @-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-webkit-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-moz-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-ms-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
-        @-o-keyframes blink{
-            0% { opacity:1; }
-            50% { opacity:0; }
-            100% { opacity:1; }
-        }
+/*.typed-cursor{
+    font-size: 20px;
+    opacity: 1;
+    color: white;
+    font-weight: 100;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@-keyframes blink{
+    0% { opacity:1;color: white; }
+    50% { opacity:0;color: white; }
+    100% { opacity:1;color: white; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1;color: white; }
+    50% { opacity:0;color: white; }
+    100% { opacity:1; color: white;}
+}
+@-moz-keyframes blink{
+    0% { opacity:1; color: white;}
+    50% { opacity:0;color: white; }
+    100% { opacity:1; color: white;}
+}
+@-ms-keyframes blink{
+    0% { opacity:1; color: white;}
+    50% { opacity:0;color: white; }
+    100% { opacity:1; color: white;}
+}
+@-o-keyframes blink{
+    0% { opacity:1; color: white;}
+    50% { opacity:0; color: white;}
+    100% { opacity:1; color: white;}
+}
 
-        .typed-fade-out{
-            opacity: 0;
-            animation: 0;
-            transition: opacity .25s;
-        }
+.typed-fade-out{
+    opacity: 0;
+    animation: 0;
+    transition: opacity .25s;
+}*/
