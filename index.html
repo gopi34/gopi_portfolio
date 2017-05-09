@@ -12,77 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="css/examples.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<style>
-
-	/* Style for our header texts
-	* --------------------------------------- */
-	h1{
-		font-size: 5em;
-		font-family: arial,helvetica;
-		color: #fff;
-		margin:0;
-		padding:0;
-	}
-
-	/* Backgrounds will cover all the section
-	* --------------------------------------- */
-	#section1,
-	#section2,
-	#section3,
-	#section4,
-	#section5,
-	#section6{
-		background-size: cover;
-		background-attachment: fixed;
-		text-align:center;
-	}
-
-	/* Defining each sectino background and styles
-	* --------------------------------------- */
-	#section1{
-		background-image: url(imgs/bg1.jpg);
-	}
-	#section1 h1{
-		top: 50%;
-		transform: translateY(-50%);
-		position: relative;
-	}
-	#section2{
-		background-image: url(imgs/bg3.jpg);
-		padding: 6% 0 0 0;
-	}
-	#section3{
-		background-image: url(imgs/bg4.jpg);
-		padding: 6% 0 0 0;
-	}
-	#section4{
-		background-image: url(imgs/bg6.jpg);
-		padding: 6% 0 0 0;
-	}
-	#section6{
-		background-image: url(imgs/bg7.jpg);
-		padding: 6% 0 0 0;
-	}
-	
-	#section3 h1{
-		color: #000;
-	}
-
-	/*Adding background for the slides
-	* --------------------------------------- */
-	#slide1{
-		background-image: url(imgs/bg2.jpg);
-		padding: 6% 0 0 0;
-	}
-	#slide2{
-		background-image: url(imgs/bg5.jpg);
-		padding: 6% 0 0 0;
-	}
-
-	/* Bottom menu
-	* --------------------------------------- */
-	#infoMenu li a {
-		color: #fff;
-	}
 	</style>
 
 	<!--[if IE]>
@@ -93,7 +22,8 @@
 
 	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> -->
 	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> -->
-
+	<!-- <link href="https://fonts.googleapis.com/css?family=Aldrich|Armata|Electrolize|Jura|Khand|Rajdhani|Ropa+Sans|Signika+Negative" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/particles.js"></script>
@@ -120,10 +50,11 @@
 			});
 		});
 	</script>
+	<script type="text/javascript">new WOW().init();</script>
 	<script>
 	  $(function(){
 	$(".typed").typed({
-		strings: ["Who am I ? ", "^1000Developer ", "^1000Reverse Engineer ", "^1000Aspiring Data Scientist ^5000"],
+		strings: ["^1000Developer ", "^1000Reverse Engineer ", "^1000Aspiring Data Scientist ^5000"],
 		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 		stringsElement: null,
 		// typing speed
@@ -137,7 +68,7 @@
 		// loop
 		loop: true,
 		// false = infinite
-		loopCount: 1,
+		loopCount: false,
 		// show cursor
 		showCursor: false,
 		// character for cursor
@@ -160,37 +91,65 @@
 </script>
 </head>
 <body>
+
 <div id="fullpage">
+<!-- First intro section Start -->
 	<section class="vertical-scrolling">
-	<div id="particles-js">
-	<div class="typed_wrap">
-			<h1><span class="typed">Data is everything !</span></h1>
+	<div class="introsection" id="particles-js">
+	<div class="name">Gopinath Balu</div>
+	<div class="typed_wrap"> <!-- wow lightSpeedOut animated --> 
+			<h1 style="font-family:'Khand', sans-serif;">- <span class="typed"></span></h1>
 		</div>
 	</div>
 	</section>
+<!-- First intro section End -->
+
+<!-- Second bio section Start -->
 	<section class="vertical-scrolling" id="section2">
-	<h1>Bio</h1>
+	<div class="biosection"></div>
 	</section>
+<!-- Second bio section End -->
+
+<!-- Third education section Start-->
 	<section class="vertical-scrolling" id="section3">
-	<h1>Education</h1>
+	<div class="edusection"></div>
 	</section>
+<!-- Third education section End -->
+
+<!-- Fourth tecknowledge section Start -->
 	<section class="vertical-scrolling" id="section4">
-	<h1>Technology</h1>
+	<div class="techsection"></div>
 	</section>
+<!-- Fourth teckowledge section End -->
+
+<!-- Fifth portfolio section Start -->
 	<section class="vertical-scrolling" id="section5">
+	<!-- Horizontal slide section Start -->
+	<div class="portfoliosection">
 		<section class="horizontal-scrolling" id="slide1">
 		<h1>Portfolio</h1>
 		</section>
 		<section class="horizontal-scrolling" id="slide2">
 		<h1>Totally customizable</h1>
 		</section>
+	</div>
+	<!-- Horizontal slide section End -->
 	</section>
+<!-- Fifth portfolio section End -->
+
+<!-- Sixth contact section Start -->
 	<section class="vertical-scrolling" id="section6">
-	<h1>Contact</h1>
+	<div class="contactsection">
+		
+	</div>
 	</section>
+<!-- Sixth contact section End -->
 </div>
+
 <script>
-        particlesJS("particles-js", {"particles":{"number":{"value":90,"density":{"enable":true,"value_area":800}},"color":{"value":"#0722f0"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":7},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ff0000","opacity":0.4,"width":1},"move":{"enable":true,"speed":1.5,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":140,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+        particlesJS("particles-js", {"particles":{"number":{"value":70,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":7},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":1.5,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"grab"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":140,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+        
+        // particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":200,"size":4,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
 </script>
 </body>
 </html>

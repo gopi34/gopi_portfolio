@@ -19,6 +19,29 @@ li{list-style:none}
 
 
 /* =============================================================================
+   My Fonts
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Junction';
+  src: url('../fonts/junction/Junction-bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Audimat';
+  src: url('../fonts/audimat/AUdimat-Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Khand';
+    src: url('../fonts/khand/Khand-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Armata';
+    src: url('../fonts/armata/Armata-Regular.otf') format('opentype'),
+         url('../fonts/armata/Armata-Regular.ttf') format('truetype');
+    ;
+}
+
+/* =============================================================================
    My CSS
    ========================================================================== */
 
@@ -30,6 +53,10 @@ body {
 }
 
 /* code for hero section */
+
+/* =============================================================================
+   Hero section CSS
+   ========================================================================== */
 canvas {
     /*display:block;
     background: #ffffff;
@@ -39,28 +66,39 @@ canvas {
     display: block;
     vertical-align: bottom;
   }
-
 #particles-js {
-      position:fixed;
-      top:0;
-      right:0;
-      bottom:0;
-      left:0;
-      z-index:0; 
+    /*position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:0; 
+    /*background-color: #b61924; */
+    /*background-image: url("../imgs/carbon-fibre.png"); */
+    /*background-position: 100% 100%;*/
+    /*background-size: cover; */
+    background-repeat: 0 0; 
+    background-position: 50% 50%;
   }
+  /* Hero section ends here*/
 
+/* =============================================================================
+   My roles CSS
+   ========================================================================== */
 .typed_wrap {
-    background:url('../imgs/header-bg.png');
-    height: 40px;
-    width: 100%;
     display: block;
-    padding: 10px 0 0 10px;
+    height: auto;
+    margin: 285px 0 0 465px;
+    padding: 15px;
     position: absolute;
 }
 .typed_wrap h1 {
     display: inline;
+    font-size: 4em;
+    font-family: 'Khand', sans-serif;
+}
+.typed_wrap h1 span {
     color: #fff;
-    font-size: 2em;
 }
 .typed::after {
     animation: 0.7s ease 0s normal none infinite running blink;
@@ -104,47 +142,126 @@ canvas {
     opacity: 1;
 }
 }
+/* My roles section end here*/
 
-/* code for animated blinking cursor */
-/*.typed-cursor{
-    font-size: 20px;
-    opacity: 1;
-    color: white;
-    font-weight: 100;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    -ms-animation: blink 0.7s infinite;
-    -o-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+/* =============================================================================
+   Portfolio sections starts here
+   ========================================================================== */
+.introsection{
+    background: url('../imgs/stardust.png');
+    background-color: #000000;
 }
-@-keyframes blink{
-    0% { opacity:1;color: white; }
-    50% { opacity:0;color: white; }
-    100% { opacity:1;color: white; }
+.name{
+    text-align: center;
+    font-family: 'Armata', sans-serif;
+    color: #fff;
+    font-size: 6em;
+    position: absolute;
+    margin: 170px 0 0 400px;
 }
-@-webkit-keyframes blink{
-    0% { opacity:1;color: white; }
-    50% { opacity:0;color: white; }
-    100% { opacity:1; color: white;}
+.biosection{
+    border: solid 4px #ffffff;
+    height: 665px;
+    background-color: red;
 }
-@-moz-keyframes blink{
-    0% { opacity:1; color: white;}
-    50% { opacity:0;color: white; }
-    100% { opacity:1; color: white;}
+.edusection{
+    border: solid 4px #ffffff;
+    height: 665px;
+    background-color: blue;
 }
-@-ms-keyframes blink{
-    0% { opacity:1; color: white;}
-    50% { opacity:0;color: white; }
-    100% { opacity:1; color: white;}
+.techsection{
+    border: solid 4px #ffffff;
+    height: 665px;
+    background-color: green;
 }
-@-o-keyframes blink{
-    0% { opacity:1; color: white;}
-    50% { opacity:0; color: white;}
-    100% { opacity:1; color: white;}
+.portfoliosection{
+    border: solid 4px #ffffff;
+    height: 665px;
+    background-color: yellow;
 }
+.contactsection{
+    border: solid 4px #ffffff;
+    background: url('../imgs/carbon-fibre.png');
+    height: 665px;
+    background-color: violet;
+}
+/* Portfolio sections end here*/
 
-.typed-fade-out{
-    opacity: 0;
-    animation: 0;
-    transition: opacity .25s;
-}*/
+/* Style for our header texts
+    * --------------------------------------- */
+    h1{
+        font-size: 5em;
+        font-family: arial,helvetica;
+        color: #fff;
+        margin:0;
+        padding:0;
+    }
+
+    /* Backgrounds will cover all the section
+    * --------------------------------------- */
+    /*#section1,
+    #section2,
+    #section3,
+    #section4,
+    #section5,
+    #section6{
+        background-size: cover;
+        background-attachment: fixed;
+        text-align:center;
+    }*/
+
+    /* Defining each sectino background and styles
+    * --------------------------------------- */
+    /*#section1{
+        background-image: url(imgs/bg1.jpg);
+    }
+    #section1 h1{
+        top: 50%;
+        transform: translateY(-50%);
+        position: relative;
+    }
+    #section2{
+        background-image: url(imgs/bg3.jpg);
+        padding: 6% 0 0 0;
+    }
+    #section3{
+        background-image: url(imgs/bg4.jpg);
+        padding: 6% 0 0 0;
+    }
+    #section4{
+        background-image: url(imgs/bg6.jpg);
+        padding: 6% 0 0 0;
+    }
+    #section6{
+        background-image: url(imgs/bg7.jpg);
+        padding: 6% 0 0 0;
+    }
+    
+    #section3 h1{
+        color: #000;
+    }*/
+
+    /*Adding background for the slides
+    * --------------------------------------- */
+    #slide1{
+        background-image: url(imgs/bg2.jpg);
+        padding: 6% 0 0 0;
+    }
+    #slide2{
+        background-image: url(imgs/bg5.jpg);
+        padding: 6% 0 0 0;
+    }
+
+    /* Bottom menu
+    * --------------------------------------- */
+    #infoMenu li a {
+        color: #fff;
+    }
+
+
+/*======================
+        CONTACT
+======================*/
+
+
+
