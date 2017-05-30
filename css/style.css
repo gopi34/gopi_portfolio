@@ -88,14 +88,15 @@ canvas {
 .typed_wrap {
     display: block;
     height: auto;
-    margin: 285px 0 0 465px;
+    margin: 285px 0 0 480px;
     padding: 15px;
     position: absolute;
 }
 .typed_wrap h1 {
     display: inline;
     font-size: 4em;
-    font-family: 'Khand', sans-serif;
+    color: #fff;
+    font-family:'Khand', sans-serif;
 }
 .typed_wrap h1 span {
     color: #fff;
@@ -148,7 +149,7 @@ canvas {
    Portfolio sections starts here
    ========================================================================== */
 .introsection{
-    background: url('../imgs/stardust.png');
+    /*background: url('../imgs/stardust.png');*/
     background-color: #000000;
 }
 .name{
@@ -160,29 +161,28 @@ canvas {
     margin: 170px 0 0 400px;
 }
 .biosection{
-    border: solid 4px #ffffff;
-    height: 665px;
-    background-color: red;
+    height: 673px;
+    background-color: #000;
+}
+#positionbio{
+    padding: 130px 0 0 130px;
 }
 .edusection{
-    border: solid 4px #ffffff;
-    height: 665px;
-    background-color: blue;
+    height: 673px;
+    background-color: #000;
+    background: url('../imgs/stardust.png');
 }
 .techsection{
-    border: solid 4px #ffffff;
-    height: 665px;
+    height: 673px;
     background-color: green;
 }
 .portfoliosection{
-    border: solid 4px #ffffff;
-    height: 665px;
+    height: 673px;
     background-color: yellow;
 }
 .contactsection{
-    border: solid 4px #ffffff;
     background: url('../imgs/carbon-fibre.png');
-    height: 665px;
+    height: 673px;
     background-color: violet;
 }
 /* Portfolio sections end here*/
@@ -264,4 +264,16 @@ canvas {
 ======================*/
 
 
-
+.aboutmehello{
+    font-size: 60px;
+    font-family: 'Armata', sans-serif;
+    color: #fff;
+}
+.aboutmerest{
+    font-size: 40px;
+    font-family: 'Khand', sans-serif;
+    color: #fff;
+}
+.aboutmerest1{
+    color: #fff;
+}
